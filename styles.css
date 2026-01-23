@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 20px 15%;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8
+}
+.nav-links a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.mainsection {
+    background-color: #1f2937;
+    min-height: 600px;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+.herosection{
+    color: #f9faf8;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroimage{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.heroimage img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+.aboutus{
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 50px 15%;
+    text-align: center;
+}
+.champions-container{
+    display: flex;
+    gap: 20px;
+}
+.champions-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.quotesection{
+    background-color: #e5e7eb;
+    padding : 40px 20%;
+    font-weight: 300;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+}
+.thorquote{
+    font-size: 36px;
+}
+.thorname {
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
