@@ -1,14 +1,20 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
     box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
 }
 header{
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 20px 15%;
+    padding: 25px 80px;
     text-align: center;
+}
+.Logodot{
+    color: #3882f6;
 }
 nav {
     display: flex;
@@ -20,36 +26,101 @@ nav {
     font-weight: bold;
     color: #f9faf8
 }
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .nav-links a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
     margin-left: 20px;
 }
+.nav-links a:hover {
+    color: #3882f6;
+}
+.nav-links .Contactus{
+    padding: 6px 16px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: solid 1px #3882f6;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.nav-links .Contactus:hover {
+    background-color: #2564eb00;
+    border-color: #3882f6;
+    color: #3882f6;
+}
+.herosection h1{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+.herosection p{
+    font-size: 18px;
+    color: #f9faf8;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+.signupbutton{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: solid 1px #3882f6;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.signupbutton:hover {
+    background-color: #2564eb00;
+    border-color: #3882f6;
+    color: #3882f6;
+}
+.learnmorebutton{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    border: solid 1px #e5e7eb;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.learnmorebutton:hover {
+    background-color: #cbd5e100;
+    border-color: #e5e7eb;
+    color: #e5e7eb;
+}
 .mainsection {
     background-color: #1f2937;
-    min-height: 600px;
-    padding: 0;
+    padding: 50px 80px 100px 80px;
     display: flex;
-    gap: 40px;
+    gap: 60px;
 }
 .herosection{
     color: #f9faf8;
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+    align-items: start;
+    justify-content: space-evenly;
 }
 .heroimage{
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    height: 300px;
 }
 .heroimage img{
-    width: 70%;
-    height: auto;
     border-radius: 10px;
 }
 .aboutus{
@@ -83,4 +154,34 @@ nav {
     font-size: 24px;
     justify-content: flex-end;
     font-weight: bold;
+}
+.joinus{
+    display: flex; 
+    justify-content: center;
+    padding: 50px 0;
+}
+.joinuscontainer{
+    display: flex;
+    width: 70%;
+    padding: 30px 40px;
+    gap: 20px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.joinright {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.footer{
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+footer p{
+    font-size: 14px;
 }
