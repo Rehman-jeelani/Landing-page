@@ -11,7 +11,6 @@ header{
     background-color: #1f2937;
     color: #f9faf8;
     padding: 25px 80px;
-    text-align: center;
 }
 .Logodot{
     color: #3882f6;
@@ -104,6 +103,7 @@ nav {
     padding: 50px 80px 100px 80px;
     display: flex;
     gap: 60px;
+    align-items: center;
 }
 .herosection{
     color: #f9faf8;
@@ -111,72 +111,108 @@ nav {
     flex: 1;
     flex-direction: column;
     gap: 10px;
-    align-items: start;
     justify-content: space-evenly;
 }
 .heroimage{
     display: flex;
     flex: 1;
-    justify-content: end;
-    height: 300px;
+    justify-content: center;
 }
 .heroimage img{
     width: 100%; 
-    height: 100%;      
-    object-fit: cover;
+    height: auto;      
     border-radius: 10px;
 }
 .aboutus{
-    background-color: #ffffff;
     color: #1f2937;
-    padding: 50px 15%;
+    padding: 30px 15% 50px;
     text-align: center;
+    background-color: #f9faf8;
+}
+.aboutus h2{
+    padding: 30px 0;
+    font-size: 30px;
 }
 .champions-container{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    justify-content: center;
+}
+.champion-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.champion-card h3{
+    font-size: 16px;
+    color: #1f2937;
 }
 .champions-container img{
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
+.champions-container img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.377));
+    transition: transform 0.3s ease;
+}
 .quotesection{
     background-color: #e5e7eb;
-    padding : 40px 20%;
+    padding : 100px 20%;
     font-weight: 300;
     color: #1f2937;
     display: flex;
     flex-direction: column;
 }
 .thorquote{
-    font-size: 36px;
+    font-size: 34px;
+    color: #1f2937;
+    font-weight: 300;
 }
 .thorname {
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
     justify-content: flex-end;
     font-weight: bold;
+    padding-right: 30px;
 }
 .joinus{
     display: flex; 
     justify-content: center;
-    padding: 50px 0;
+    padding: 80px 0;
+    background-color: #f3f4f6;
 }
 .joinuscontainer{
     display: flex;
-    width: 70%;
-    padding: 30px 40px;
+    width: 80%;
+    padding: 40px 80px;
     gap: 20px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 10px;
     justify-content: space-between;
-}
-.joinright {
-    display: flex;
     align-items: center;
-    height: 100%;
+}
+.joinleft{
+    flex: 1;
+}
+.joinright button{
+    padding: 12px 24px;
+    border: solid 2px #f9faf8;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #f9faf8;
+    background-color: #3882f6;
+    cursor: pointer;
+}
+.joinright button:hover{
+    background-color: #f9faf8;
+    color: #3882f6;
+
 }
 .footer{
     background-color: #1f2937;
@@ -187,4 +223,79 @@ nav {
 }
 footer p{
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px}
+    .logo {
+        font-size: 20px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nav-links .Contactus {
+        padding: 5px 12px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .mainsection {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 50px 80px;
+    }
+    .champions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .herosection {
+        align-items: center;
+        text-align: center;
+    }
+    .herosection h1 {
+        font-size: 36px;
+    }
+    .herosection p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .aboutus {
+        padding: 30px 15% 50px;
+    }
+    .aboutus h3 {
+        font-size: 24px;
+    }
+    .quotesection {
+        padding: 60px 15%;
+    }
+    .thorquote {
+        font-size: 24px;
+    }
+    .thorname {
+        font-size: 16px;
+    }
+    .joinus {
+        padding: 50px 0;
+    }
+    .joinuscontainer {
+        padding: 30px 30px;
+    }
+    .joinleft h2 {
+        font-size: 20px;
+    }
+    .joinleft p {
+        font-size: 14px;
+    }
+    .joinright {
+        align-self: center;
+    }
+    .joinright button {
+        font-size: 16px;
+        padding: 12px 24px;
+        white-space: nowrap;
+    }
 }
